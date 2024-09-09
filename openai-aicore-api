@@ -1,0 +1,12 @@
+#
+#Mon Sep 09 15:47:21 UTC 2024
+Type=HTTP
+clientId=sb-b20be619-6fc3-449f-a899-ac2333da55f6!b391340|aicore!b540
+clientSecret=66aea0db-7b66-43bb-8a46-2eb46bae4287$LnKTZvZ2WWtGs0tcM1M7I5S6GnIuhCAssMhpxNZdAkc=
+HTML5.Timeout=300000
+Authentication=OAuth2ClientCredentials
+Name=openai-aicore-api
+tokenServiceURL=https://tfe-india-genai-9gqs3m10.authentication.eu10.hana.ondemand.com/oauth/token
+ProxyType=Internet
+URL=https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com
+tokenServiceURLType=Dedicated
