@@ -13,3 +13,5 @@ sap-xssec
 langchain-openai
 ipywidgets
 jupyter
+langchain_aws
+langchain_google_vertexai
