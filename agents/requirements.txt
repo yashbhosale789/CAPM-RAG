@@ -1,0 +1,15 @@
+Flask
+tqdm
+requests
+langchain
+chromadb
+flask-cors
+generative-ai-hub-sdk
+hdbcli
+langchain_experimental
+pandas
+tabulate
+sap-xssec
+langchain-openai
+ipywidgets
+jupyter
