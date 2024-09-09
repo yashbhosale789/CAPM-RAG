@@ -93,9 +93,18 @@ This sample CAP application uses the CAP LLM Plugin to simplify the process of a
 #### Sample Chat Inputs to Tryout!
 
 1. Sample Chat 1: (Click on **+ New Chat** For a fresh window chat) and use following message inputs one by one:            
-    - nutritional food for cats
-    - What is the weight of MonPetit Crispy Kisses Variety Pack Comp item?
-    - dental care kit for cat?
+    - 
+    ```
+    nutritional food for cats
+    ```
+    - 
+    ```
+    What is the weight of MonPetit Crispy Kisses Variety Pack Comp item?
+    ```
+    - 
+    ```
+    dental care kit for cat?
+    ```
     ![sample_chat1](images/sample_chat1.png)
  
 2. Sample Chat 2: Click on **+ New Chat** For a fresh window chat and use following message inputs  one by one:    
