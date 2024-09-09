@@ -93,9 +93,8 @@ This sample CAP application uses the CAP LLM Plugin to simplify the process of a
 #### Sample Chat Inputs to Tryout!
 
 1. Sample Chat 1: (Click on **+ New Chat** For a fresh window chat) and use following message inputs one by one:            
-    - 
-    ```
-    nutritional food for cats
+    - ```
+        nutritional food for cats
     ```
     - 
     ```
