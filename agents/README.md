@@ -4,7 +4,7 @@ The core idea of agents is to use a language model to choose a sequence of actio
 ## Pre-requisites:
 
 1. Subscription to SAP Business Application Studio.
-2. Generative AI Hub Credentials
+2. Generative AI Hub Credentials (As used previously)
 
 ## Getting started
 
@@ -18,6 +18,7 @@ The core idea of agents is to use a language model to choose a sequence of actio
 
     ![clone](images/clone.png)
 
+- Navigate to the .env file & update your GenAI Hub credentials.  
 - Open the cloned repo & navigate to Agents.ipynb file in the Agents folder.
 - Click on Select Kernel, choose python environments & click on create Python environments.
 
