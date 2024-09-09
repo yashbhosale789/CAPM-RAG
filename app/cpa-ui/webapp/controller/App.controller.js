@@ -5,7 +5,7 @@ sap.ui.define(
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("hrapprovalui.controller.App", {
+      return BaseController.extend("cpaui.controller.App", {
         onInit: function() {
         }
       });

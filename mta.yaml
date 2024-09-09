@@ -55,6 +55,7 @@ modules:
 # ------------------------------------------------------------
     type: com.sap.application.content
     requires:
+      - name: srv-api
       - name: cpa-rag-usecase-destination-service
         parameters:
           content-target: true
@@ -65,21 +66,28 @@ modules:
       - name: cpa-rag-usecase-auth
         parameters:
           service-key:
-            name: uaa_cpa-rag-usecase-key
+            name: cpa-rag-usecase-auth-key
     parameters:
       content:
         instance:
           destinations:
-            - Name: hr_app_hr_approval_rag_usecase_repo_host
-              ServiceInstanceName: cpa-rag-usecase-html5-app-host-service
+            - Authentication: OAuth2ClientCredentials
+              Name: cpa-rag-usecase-srv
+              TokenServiceInstanceName: cpa-rag-usecase-auth
+              TokenServiceKeyName: cpa-rag-usecase-auth-key
+              URL: ~{srv-api/srv-url}
+              sap.cloud.service: cpaui.app
+              HTML5.Timeout: 300000
+            - Name: cpa-rag-usecase-repo-host-dest
+              ServiceInstanceName: cpa-rag-usecase-repo-host
               ServiceKeyName: cpa-rag-usecase-repo-host-key
-              sap.cloud.service: hr.app
+              sap.cloud.service: cpaui.app
             - Authentication: OAuth2UserTokenExchange
-              Name: hr_app_uaa_hr_approval_rag_usecase
-              ServiceInstanceName: cpa-rag-usecase-xsuaa-service
-              ServiceKeyName: uaa_cpa-rag-usecase-key
-              sap.cloud.service: hr.app
-          existing_destinations_policy: ignore
+              Name: cpa-rag-usecase-auth-dest
+              ServiceInstanceName: cpa-rag-usecase-auth
+              ServiceKeyName: pa-rag-usecase-auth-key
+              sap.cloud.service: cpaui.app
+          existing_destinations_policy: update
     build-parameters:
       no-source: true
 
@@ -96,12 +104,12 @@ modules:
       build-result: resources
       requires:
         - artifacts:
-            - hrapprovalui.zip
-          name: hrapprovalui
+            - cpaui.zip
+          name: cpaui
           target-path: resources/
 
 # ------------- APPLICATION: UI5 -------------------------
-  - name: hrapprovalui
+  - name: cpaui
 # ------------------------------------------------------------
     type: html5
     path: app/cpa-ui
@@ -136,6 +144,8 @@ modules:
           url: ~{srv-url}
           forwardAuthToken: true
       - name: cpa-rag-usecase-auth
+      - name: cpa-rag-usecase-destination-service
+      - name: cpa-rag-usecase-repo-runtime
 
 resources:
 # ------------------------------------------------------------
@@ -146,7 +156,7 @@ resources:
       path: ./xs-security.json
       service: xsuaa
       service-plan: application
-      service-name: cpa-rag-usecase-xsuaa-service
+      service-name: cpa-rag-usecase-auth
       config:
         tenant-mode: dedicated
         xsappname: cpa-rag-usecase-${org}-${space}
@@ -163,8 +173,13 @@ resources:
     type: org.cloudfoundry.managed-service
     parameters:
       service: html5-apps-repo
-      service-name: cpa-rag-usecase-html5-app-host-service
+      service-name: cpa-rag-usecase-repo-host
       service-plan: app-host
+  - name: cpa-rag-usecase-repo-runtime
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-runtime
 # ------------------------------------------------------------
   - name: cpa-rag-usecase-destination-service
 # ------------------------------------------------------------

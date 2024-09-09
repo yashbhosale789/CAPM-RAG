@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "hrapprovalui",
+    "id": "cpaui",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -88,7 +88,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "hrapprovalui.i18n.i18n"
+          "bundleName": "cpaui.i18n.i18n"
         }
       },
       "": {
@@ -120,7 +120,7 @@
       ]
     },
     "rootView": {
-      "viewName": "hrapprovalui.view.App",
+      "viewName": "cpaui.view.App",
       "type": "XML",
       "async": true,
       "id": "App"
@@ -130,7 +130,7 @@
         "routerClass": "sap.f.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "hrapprovalui.view",
+        "viewPath": "cpaui.view",
         "controlId": "flexibleColumnLayout",
         "transition": "slide"
       },
@@ -175,6 +175,6 @@
   },
   "sap.cloud": {
     "public": true,
-    "service": "hr.app"
+    "service": "cpaui.app"
   }
 }

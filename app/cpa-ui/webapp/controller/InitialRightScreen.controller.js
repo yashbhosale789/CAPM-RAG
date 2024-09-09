@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(Controller, JSONModel) {
     'use strict';
     
-    return Controller.extend("hrapprovalui.controller.InitialRightScreen", {
+    return Controller.extend("cpaui.controller.InitialRightScreen", {
 
         onInit: function(){
 
@@ -64,8 +64,8 @@ sap.ui.define([
             var appPath = appId.replaceAll(".", "/");
             var appModulePath = jQuery.sap.getModulePath(appPath);
 
-            // return appModulePath;
-            return '';
+            return appModulePath;
+            // return '';
         }, 
 
         onRouteMatched(oEvent){

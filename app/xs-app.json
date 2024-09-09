@@ -1,17 +1,19 @@
 {
-  "welcomeFile": "app/index.html",
+  "welcomeFile": "cpaui/index.html",
   "routes": [
+  {
+    "source": "^/odata/(.*)$",
+    "target": "/odata/$1",
+    "destination": "cpa-rag-usecase-srv",
+    "authenticationType": "xsuaa",
+    "csrfProtection": false,
+    "cacheControl": "no-cache, no-store, must-revalidate"
+  },
     {
-      "source": "^/app/(.*)$",
+      "source": "^(.*)$",
       "target": "$1",
-      "localDir": ".",
-      "cacheControl": "no-cache, no-store, must-revalidate"
-    },
-    {
-      "source": "^/(.*)$",
-      "target": "$1",
-      "destination": "srv-api",
-      "csrfProtection": true
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
     }
   ]
 }

@@ -11,7 +11,7 @@ sap.ui.define([
      Filter, FilterOperator, MessageToast, JSONModel, MessageBox) {
     'use strict';
     
-    return Controller.extend("hrapprovalui.controller.LeftScreen", {
+    return Controller.extend("cpaui.controller.LeftScreen", {
 
         onInit: function(){
 
@@ -108,7 +108,7 @@ sap.ui.define([
         onUploadFileBtnSelect: function(oEvent){
 
             this.fileUploadFragment ??= this.loadFragment({
-                name: "hrapprovalui.view.FileUploading"
+                name: "cpaui.view.FileUploading"
             });
 
             this.fileUploadFragment.then((oFragment) => oFragment.open());
@@ -122,7 +122,7 @@ sap.ui.define([
         onManageFileBtnSelect: function(){
 
             this.fileManagementFragment ??= this.loadFragment({
-                name: "hrapprovalui.view.FileManagement"
+                name: "cpaui.view.FileManagement"
             });
 
             this.fileManagementFragment.then((oFragment) => oFragment.open());
@@ -474,8 +474,8 @@ sap.ui.define([
             var appPath = appId.replaceAll(".", "/");
             var appModulePath = jQuery.sap.getModulePath(appPath);
 
-            // return appModulePath;
-            return '';
+            return appModulePath;
+            // return '';
         }, 
     });
 });

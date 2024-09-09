@@ -1,6 +1,6 @@
 specVersion: "2.5"
 metadata:
-  name: hrapprovalui
+  name: cpaui
 type: application
 framework:
   name: OpenUI5

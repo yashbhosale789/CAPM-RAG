@@ -1,5 +1,5 @@
 <mvc:View 
-    controllerName="hrapprovalui.controller.InitialRightScreen"
+    controllerName="cpaui.controller.InitialRightScreen"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.f"

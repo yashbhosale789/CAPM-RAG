@@ -52,7 +52,15 @@ npm run deploy
 
 - Use the chat based UI to query the products.
 
-- Sample queries
-1. Nutritional food for cats
- 
+#### Sample Chats to Tryout!
 
+1. Sample Chat 1: (Click on **+ New Chat** For a fresh window chat) and use following message inputs:            
+    - nutritional food for cats
+    - What is the weight of MonPetit Crispy Kisses Variety Pack Comp item?
+    - dental care kit for cat?
+ 
+2. Sample Chat 2: Click on **+ New Chat** For a fresh window chat and use following message inputs:    
+    - Items used for skin protection
+    - What are Vaseline HG 100g products?
+    - provide product ids of Vaseline Products?
+    - List down the product ids and description for moisturizing hand?
