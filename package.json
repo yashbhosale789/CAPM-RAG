@@ -54,13 +54,6 @@
                         "requestTimeout": 30000
                     }
                 },
-                "destination_sf": {
-                    "kind": "rest",
-                    "credentials": {
-                        "url": "<your-successfactors-base-url>",
-                        "requestTimeout": 30000
-                    }
-                },
                 "auth": {
                     "passport": {
                         "strategy": "mock",
@@ -84,13 +77,6 @@
                     "kind": "rest",
                     "credentials": {
                         "url": "https://jsonplaceholder.typicode.com",
-                        "requestTimeout": 30000
-                    }
-                },
-                "destination_sf": {
-                    "kind": "rest",
-                    "credentials": {
-                        "url": "<your-successfactors-base-url>",
                         "requestTimeout": 30000
                     }
                 }
