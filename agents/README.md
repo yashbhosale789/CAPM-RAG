@@ -26,6 +26,8 @@ The core idea of agents is to use a language model to choose a sequence of actio
     ![clone](images/requirements.png)
 
 - You're now all set to try out the Agentic workflow with csv agents!
+- Now execute cell one by one. Click on the icon as shown for each cell.
+    ![execute_cell](images/execute_cell.png)
 
 
 ## Reference
