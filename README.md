@@ -31,7 +31,8 @@ This sample CAP application uses the CAP LLM Plugin to simplify the process of a
     
     Click open when you see following pop-up.
     ![clone_git2](images/clone_git2.png)
--   Replace the content of  ".cdsrc.json" with the content shared over email.
+    
+-   Replace the content of  ".cdsrc.json" with the content of attachment shared over email.
     ![cdsrc](images/cdsrc.png)
 
 ## Import Destination
