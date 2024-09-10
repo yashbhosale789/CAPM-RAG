@@ -121,3 +121,7 @@ This sample CAP application uses the CAP LLM Plugin to simplify the process of a
     List down the product ids and description for moisturizing hand?
     ```
     ![sample_chat2](images/sample_chat2.png)
+
+
+## Agents Hand-On. 
+-   If you have completed this hands-on, you can proceed to try out agents from [here](./agents/README.md)
