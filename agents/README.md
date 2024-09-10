@@ -18,7 +18,6 @@ The core idea of agents is to use a language model to choose a sequence of actio
 
     ![clone](images/clone.png)
 
-- Navigate to the .env file & update your GenAI Hub credentials.  
 - Open the cloned repo & navigate to Agents.ipynb file in the Agents folder.
 - Click on Select Kernel, choose python environments & click on create Python environments.
 
