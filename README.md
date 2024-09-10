@@ -62,6 +62,8 @@ This sample CAP application uses the CAP LLM Plugin to simplify the process of a
     ![deploy5](images/deploy5.png)
 -   Once logged in successfully, make sure targeted space is set as shown below.
     ![deploy6](images/deploy6.png)
+-   Install dependencies by using following command:
+    `npm install`
 -   Build the project by using following command:    
     `npm run build`     
     Once built successfully, you should see following message
