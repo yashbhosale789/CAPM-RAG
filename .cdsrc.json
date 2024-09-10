@@ -7,13 +7,13 @@
     "requires":{
         "GENERATIVE_AI_HUB": {
             "CHAT_MODEL_DESTINATION_NAME": "AICoreAzureOpenAIDestination",
-            "CHAT_MODEL_DEPLOYMENT_URL": "/v2/inference/deployments/dded1346f6742475",
-            "CHAT_MODEL_RESOURCE_GROUP": "default",
-            "CHAT_MODEL_API_VERSION": "2023-05-15",
+            "CHAT_MODEL_DEPLOYMENT_URL": "",
+            "CHAT_MODEL_RESOURCE_GROUP": "",
+            "CHAT_MODEL_API_VERSION": "",
             "EMBEDDING_MODEL_DESTINATION_NAME": "AICoreAzureOpenAIDestination",
-            "EMBEDDING_MODEL_DEPLOYMENT_URL": "/v2/inference/deployments/dc5d835423cd6b24",
-            "EMBEDDING_MODEL_RESOURCE_GROUP": "default",
-            "EMBEDDING_MODEL_API_VERSION": "2023-05-15"
+            "EMBEDDING_MODEL_DEPLOYMENT_URL": "",
+            "EMBEDDING_MODEL_RESOURCE_GROUP": "",
+            "EMBEDDING_MODEL_API_VERSION": ""
         },
         "AICoreAzureOpenAIDestination": {
             "kind": "rest",
