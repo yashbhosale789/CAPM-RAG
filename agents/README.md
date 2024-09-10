@@ -8,17 +8,7 @@ The core idea of agents is to use a language model to choose a sequence of actio
 
 ## Getting started
 
-- Navigate to SAP Business Application Studio
-- Click on Create Dev Space & provide a name for it.
-- Choose application type as full stack application & select Python Tools from Additional SAP Extensions & click on create space
-
-    ![devspace](images/devSpace.png)
-
-- Click on Clone from git & add the repo URL "https://github.com/AjitKP91/cpa-rag-usecase.git"
-
-    ![clone](images/clone.png)
-
-- Open the cloned repo & navigate to Agents.ipynb file in the Agents folder.
+- Open the cloned repo & navigate to Agents.ipynb file in the agents folder.
 - Click on Select Kernel, choose python environments & click on create Python environments.
 
     ![clone](images/kernel.png)
