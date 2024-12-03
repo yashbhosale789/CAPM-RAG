@@ -32,10 +32,12 @@ This sample CAP application uses the CAP LLM Plugin to simplify the process of a
     Click open when you see following pop-up.
     ![clone_git2](images/clone_git2.png)
     
--   Replace the content of  ".cdsrc.json" with the content of attachment shared over email.
-    ![cdsrc](images/cdsrc.png)
+-   Replace the content of  ".cdsrc.json" with deployment ids as shown below.
+    ![cdsrc](images/update-cdsrc.png)
 
 ## Import Destination
+-   Open 'gen-ai-hub' file and update the values from the service key of your AI Core Instance. Replace client id, client secret, token url and api url as shown below:
+    ![test](images/replace-destination-w-key.png)
 -   save 'gen-ai-hub' file to your local computer. (Right click on 'gen-ai-hub' file and click Download)
     ![dowload1](images/dowload1.png)
 -   Go to BTP cockpit and trial subaccount. Then navigate to Destination under connectivity menu item. Click on import destination.
@@ -52,7 +54,7 @@ This sample CAP application uses the CAP LLM Plugin to simplify the process of a
 -   Go to BAS and Open terminal by right clicking on mta.yaml file and choose open integrated terminal
     ![deploy1](images/deploy1.png)
 -   use following command to login into cf:
-    `cf login -a CF-API-Endpoint --sso`    
+    `cf login -a CF-API-Endpoint`    
     
     replace CF-API-Endpoint with api end point copied in previous step
 -   Click on the temporary authentication code url and it should open the url in next tab
